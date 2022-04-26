@@ -4,7 +4,7 @@ namespace App;
 
 use App\Mappable;
 
-abstract class Fighter
+abstract class Fighter implements Mappable
 {
     public const MAX_LIFE = 100;
 
@@ -62,7 +62,7 @@ abstract class Fighter
     /**
      * Get the value of image
      */
-    public function setImage(string $image)
+    public function setImage(string $image):void
     {
         $this->image = $image;
     }

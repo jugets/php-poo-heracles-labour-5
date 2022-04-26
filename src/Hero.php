@@ -2,7 +2,11 @@
 
 namespace App;
 
-class Hero extends Fighter
+require_once 'Movable.php';
+
+use Movable;
+
+class Hero extends Fighter implements Movable
 {
     private ?Weapon $weapon = null;
     private ?Shield $shield = null;
