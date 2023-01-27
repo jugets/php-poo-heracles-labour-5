@@ -4,5 +4,5 @@ namespace App;
 
 class Grass extends Tile
 {
-    protected string $image = '../assets/images/grass.png';
+    protected string $image = 'grass.png';
 }

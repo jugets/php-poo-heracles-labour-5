@@ -6,7 +6,7 @@ use Movable;
 
 class Bush extends Tile
 {
-    protected string $image = '../assets/images/bush.png';
+    protected string $image = 'bush.png';
 
     protected bool $crossable = false;
 

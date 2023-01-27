@@ -53,7 +53,8 @@ class Arena
             }
         }
 
-        foreach ($this->getMonsters() as $monster) {
+        foreach ($this->getMonsters() as $monster)
+        {
             if ($monster->getX() == $destinationX && $monster->getY() == $destinationY) {
                 throw new Exception('Not free');
             }
@@ -70,7 +71,7 @@ class Arena
         foreach($this->monsters as $monster)
         {
             $destination = array_rand(self::DIRECTIONS);
-            if($monster instanceof Hind)
+            if($monster instanceof Movable)
             {
                 $this->move($monster,$destination);
             }
